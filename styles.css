@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f5f1; /* Light background */
+    color: #5a3e36; /* Dark brown text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5a3e36; /* Dark brown */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d7c9b2; /* Light brown on hover */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px; /* Increased size */
+    height: 150px; /* Increased size */
+    border-radius: 50%;
+    position: relative; /* Changed from absolute to relative for better alignment */
+    margin: 20px auto; /* Center the image */
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #5a3e36, #c4a69e); /* Dark brown to light brown */
+    color: white;
+}
+
+.intro-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro-content h2 {
+    font-size: 1.5em;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background: #e6d8cc; /* Light brown */
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+/* Social Section */
+#social {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9; /* Light background */
+}
+
+#social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5a3e36; /* Dark brown */
+    transition: color 0.3s;
+}
+
+#social a:hover {
+    color: #d7c9b2; /* Light brown on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5a3e36; /* Dark brown */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 120px; /* Adjust for smaller screens */
+        height: 120px;
+    }
+}
